@@ -1,0 +1,13 @@
+account,account_name,pl_line,pl_line_order,cost_behavior
+701-01,Revenue from sales of products,Revenue,1,Revenue
+401-01,Natural gas,Variable costs,2,Variable
+401-02,Electricity,Variable costs,2,Variable
+401-03,Other raw materials & catalysts,Variable costs,2,Variable
+403-02,CO2 emission allowances,Variable costs,2,Variable
+402-01,Transport & freight,Variable costs,2,Variable
+404-01,Salaries,Fixed costs,3,Fixed
+405-01,Social security & benefits,Fixed costs,3,Fixed
+402-02,Maintenance & repairs,Fixed costs,3,Fixed
+403-01,Taxes & fees,Fixed costs,3,Fixed
+409-01,Other operating costs,Fixed costs,3,Fixed
+400-01,Depreciation & amortization,Depreciation,4,Fixed

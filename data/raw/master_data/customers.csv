@@ -1,0 +1,25 @@
+customer_id,customer_name,country,market,currency,segment
+C001,AgroPol Dystrybucja Sp. z o.o.,PL,Domestic,PLN,Distributor
+C002,Rolnik Plus S.A.,PL,Domestic,PLN,Distributor
+C003,Spółdzielnia Rolnicza Kujawy,PL,Domestic,PLN,Farm cooperative
+C004,Zielone Pola Sp. z o.o.,PL,Domestic,PLN,Distributor
+C005,Mazowiecka Grupa Producentów Rolnych,PL,Domestic,PLN,Farm cooperative
+C006,Nawozy Centrum Sp. z o.o.,PL,Domestic,PLN,Distributor
+C007,Podlaskie Zakłady Rolne S.A.,PL,Domestic,PLN,Farm cooperative
+C008,ChemTrade Polska Sp. z o.o.,PL,Domestic,PLN,Industrial
+C009,EkoTrans Logistyka Sp. z o.o.,PL,Domestic,PLN,Industrial
+C010,Wielkopolska Agro Sp. z o.o.,PL,Domestic,PLN,Distributor
+C011,Śląskie Hurtownie Chemiczne S.A.,PL,Domestic,PLN,Industrial
+C012,Lubelskie Centrum Nawozowe Sp. z o.o.,PL,Domestic,PLN,Distributor
+C013,Agrarhandel Nord GmbH,DE,Export,EUR,Distributor
+C014,Feldmann Düngemittel GmbH,DE,Export,EUR,Distributor
+C015,Rheinchem Industrie AG,DE,Export,EUR,Industrial
+C016,AgroMorava a.s.,CZ,Export,EUR,Distributor
+C017,Chemspol Brno s.r.o.,CZ,Export,EUR,Industrial
+C018,Coopérative Agricole du Nord,FR,Export,EUR,Farm cooperative
+C019,Engrais Atlantique SAS,FR,Export,EUR,Distributor
+C020,Delta Agri B.V.,NL,Export,EUR,Distributor
+C021,Baltic Agro UAB,LT,Export,EUR,Distributor
+C022,Danube Fertilizers Kft.,HU,Export,EUR,Distributor
+C023,Nordic Diesel Solutions AB,SE,Export,EUR,Industrial
+C024,Slovakia Agro Trade s.r.o.,SK,Export,EUR,Distributor

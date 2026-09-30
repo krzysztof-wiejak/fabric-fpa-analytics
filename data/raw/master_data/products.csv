@@ -1,0 +1,7 @@
+product_id,product_name,product_group,production_cost_center,unit
+P01,Urea 46%,Fertilizers,PRD-01,t
+P02,Ammonium Nitrate 34%,Fertilizers,PRD-02,t
+P03,UAN 32 Solution,Fertilizers,PRD-03,t
+P04,Calcium Ammonium Nitrate 27%,Fertilizers,PRD-02,t
+P05,Technical Ammonia,Industrial Chemicals,PRD-01,t
+P06,AdBlue (AUS32),Industrial Chemicals,PRD-03,t

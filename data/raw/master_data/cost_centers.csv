@@ -1,0 +1,8 @@
+cost_center,cost_center_name,department
+PRD-01,Ammonia & Urea Unit,Production
+PRD-02,Nitrates Unit,Production
+PRD-03,Solutions & AdBlue Unit,Production
+LOG-01,Logistics,Logistics
+MNT-01,Maintenance,Maintenance
+SAL-01,Sales & Marketing,Sales
+ADM-01,Administration,Administration
