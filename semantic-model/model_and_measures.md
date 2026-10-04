@@ -139,12 +139,21 @@ SWITCH (
     "Price", [Price Effect],
     "FX", [FX Effect]
 )
+-- dynamic Y-axis start for the waterfall (so the effects are visible)
+Bridge Axis Min =
+0.97 * MIN ( SUM ( fact_revenue_bridge[budget_revenue_pln] ), SUM ( fact_revenue_bridge[actual_revenue_pln] ) )
+
+-- dynamic chart title, e.g. "Revenue 2025: -65.9 mln vs budget"
+Bridge Title =
+VAR _var = DIVIDE ( [Volume Effect] + [Price Effect] + [FX Effect], 1000000 )
+RETURN
+    "Revenue " & SELECTEDVALUE ( dim_date[year] ) & ": "
+        & FORMAT ( _var, "+#,0.0;-#,0.0" ) & " mln vs budget"
 ```
 
 ## Report pages
 
-1. **Executive summary** – KPI cards (Revenue, EBITDA, EBITDA %, vs budget), monthly Actual vs Budget line chart, slicers: year, month, market.
-2. **P&L Actual vs Budget** – matrix: rows `dim_account[pl_line]` → `account_name`; columns: Actual, Budget (closed months), Variance, Variance %; conditional formatting with *Variance Color*.
-3. **Revenue bridge** – waterfall (`dim_bridge_step[step]` + *Bridge Value*), bar chart of effects by product, table by market.
-4. **Cost analysis** – cost by cost center and account, gas cost trend (Actual vs Budget), decomposition tree.
-5. **Sales detail** – volume and average price by product/customer/country, map of export sales, drill-through to invoices.
+1. **Executive summary** – KPI cards (Revenue, EBITDA, EBITDA %, EBITDA vs Budget), P&L matrix Actual vs Budget with drill-down to accounts and conditional formatting (*Variance Color*), monthly EBITDA vs budget, key takeaways, year slicer.
+2. **Revenue bridge** – waterfall (`dim_bridge_step[step]` + *Bridge Value*, dynamic title and axis), effects by product (table), effects by month (stacked columns).
+
+Ideas for further pages: cost analysis by cost center, sales detail by customer and country.
