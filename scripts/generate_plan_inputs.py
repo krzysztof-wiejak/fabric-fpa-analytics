@@ -17,8 +17,12 @@ price = g.groupby(['product_id','market']).apply(lambda x: x.v.sum()/x.q.sum(), 
 FX_BASE = 4.28
 months = pd.date_range('2027-01-01', '2027-12-01', freq='MS')
 
-# ---- FX scenarios ------------------------------------------------------
-fx = pd.DataFrame([(sc, m.date(), r) for sc, r in [('Base',4.28),('Strong PLN',4.15),('Weak PLN',4.45)] for m in months],
+# ---- FX scenarios: monthly EUR/PLN paths, linear from January to December
+# Base 4.30 -> 4.24, Strong PLN 4.22 -> 4.10, Weak PLN 4.36 -> 4.48
+# (FX_BASE above is only used to convert seed prices between currencies)
+FX_PATHS = {'Base': (4.30, 4.24), 'Strong PLN': (4.22, 4.10), 'Weak PLN': (4.36, 4.48)}
+fx = pd.DataFrame([(sc, m.date(), round(a + (b - a) * i / 11, 4))
+                   for sc, (a, b) in FX_PATHS.items() for i, m in enumerate(months)],
                   columns=['scenario','month_start','eur_pln'])
 fx.to_csv(OUT+'fx_scenarios_2027.csv', index=False)
 
